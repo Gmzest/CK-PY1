@@ -16,10 +16,12 @@ def get_count_char(str_):
 
 def dict_stat(dictionary):
     temp = 0
+    new_dict = {}
     for key in dictionary:
         temp += dictionary[key]
     for key in dictionary:
-        dictionary[key] = (dictionary[key] / temp) * 100
+        new_dict[key] = (dictionary[key] / temp) * 100
+    return new_dict
 
 
 main_str = """
